@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1 class="title">LOGIN</h1>
+        <%= displayMsg %>
+        <form method="post" action="/" class="form">
+            <div class="input-group">
+                <label for="username" class="username">Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password" class="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label class="password" for="role">Select Your Role</label>
+                <select class="selection"  name="role" id="">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+           
+            <button class="sign-in">Sign in</button>
+            
+            <p class="sign-up">Don't you have an account?
+                <a href="/signup">Sign up</a>
+            </p>
+        </form>
+</div>
+    
+</body>
+</html>

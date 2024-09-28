@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1 class="title">User Signup</h1>
+        <form method="post" action="/signup" class="form">
+            <div class="input-group">
+                <label for="username" class="username">Username</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password" class="password">Password</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="name" class="username">Name</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="Email" class="username">Email Id</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label class="password" for="role">Select Your Role</label>
+                <select class="selection"  name="role" id="">
+                    <option value="user">User</option>
+                </select>
+            </div>
+           
+            <button class="sign-in">Sign up</button>
+            <p class="sign-up">back to sign in ?
+                <a href="/">Sign in</a>
+            </p>
+        </form>
+</div>
+    
+</body>
+</html>
+
